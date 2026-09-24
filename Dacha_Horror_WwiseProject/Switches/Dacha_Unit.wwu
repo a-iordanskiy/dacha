@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D9B72DAC-A179-4BFA-A304-8D3348845158}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Dacha_Unit" ID="{D9B72DAC-A179-4BFA-A304-8D3348845158}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Footstep_Surface" ID="{DBE0A24A-DEC0-4D07-A0EE-385EECB495D5}">
+					<ChildrenList>
+						<Switch Name="Asphalt" ID="{B60AFF87-8FE2-45E5-84AC-1605B7A0DC3C}"/>
+						<Switch Name="Grass" ID="{5A1BB4CD-DCE3-4037-9892-8ECBC30F837C}"/>
+						<Switch Name="Wood" ID="{304BC808-40B6-4AFB-B469-226B68B7791D}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E535B977-AEC4-453F-B6A9-F50DB91F9643}" SchemaVersion="133">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{E535B977-AEC4-453F-B6A9-F50DB91F9643}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{3EE6855A-C755-407D-8DB9-86E7C5ACB5E8}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Integration_Test" ID="{FB79EA84-2B30-4C44-8ED0-2FE89D309D49}" WorkUnitID="{E6CA8811-EA80-45F7-9F17-000724E64659}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Anxious_Music" ID="{EB006830-21E2-4576-B949-7E8DF13D4757}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

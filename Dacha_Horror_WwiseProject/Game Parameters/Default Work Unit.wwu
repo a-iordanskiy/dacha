@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5FBC537D-BA07-4FDE-97BB-859251AEB0FE}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{5FBC537D-BA07-4FDE-97BB-859251AEB0FE}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

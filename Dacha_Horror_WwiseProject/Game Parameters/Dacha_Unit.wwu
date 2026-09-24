@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2B4D0068-BE60-42FF-865C-F689320E7C72}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Dacha_Unit" ID="{2B4D0068-BE60-42FF-865C-F689320E7C72}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Anxiety" ID="{C12E0EEB-6134-4523-BC46-8A475F7889D8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

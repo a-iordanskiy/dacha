@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{72AA0D1F-FCCA-430F-8065-B131B747553F}" SchemaVersion="133">
+	<SoundBanks>
+		<WorkUnit Name="Dacha_Unit" ID="{72AA0D1F-FCCA-430F-8065-B131B747553F}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="SB_Anxiety_Ambient" ID="{8AF21D97-4FE1-473E-AE1D-2946EEBC5F86}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Anxious_Music" ID="{EB006830-21E2-4576-B949-7E8DF13D4757}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SB_Footsteps" ID="{0227FD3E-0B0D-404D-BB17-B7A70C5605AA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Footstep" ID="{11A59ECB-EDB1-4644-B998-D46DCB678C26}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SB_Events" ID="{FEFB5891-2F13-4BE6-8101-8A9405F014C8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Door" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Light" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="BushRustle" ID="{402A53FD-9D49-4E31-89B6-E8DD8446D7AD}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
