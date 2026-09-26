@@ -6,12 +6,20 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{3EE6855A-C755-407D-8DB9-86E7C5ACB5E8}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Integration_Test" ID="{FB79EA84-2B30-4C44-8ED0-2FE89D309D49}" WorkUnitID="{E6CA8811-EA80-45F7-9F17-000724E64659}"/>
+							<ObjectRef Name="Play_Footstep" ID="{11A59ECB-EDB1-4644-B998-D46DCB678C26}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Anxious_Music" ID="{EB006830-21E2-4576-B949-7E8DF13D4757}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
+							<ObjectRef Name="Door_Creaks" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Light_Breaks" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Light_Flicker" ID="{92E805DC-3255-487D-951A-F9D6E6EE92FB}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>

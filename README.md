@@ -10,13 +10,21 @@ First-person atmospheric walking sim with a stalking presence. Portfolio piece d
 
 ## Threshold events
 
-Presence beats (bush rustle, flashlight flicker, door creak) fire on **threshold-crossing** of Anxiety, with hysteresis to prevent re-triggering — one reusable pattern, not bespoke logic per event.
+Presence beats fire on **threshold-crossing** of Anxiety via a reusable `CheckThresholdCrossing` function. Bush rustle and flashlight flicker are repeatable (hysteresis-gated); door creak and Game Over are one-shot.
 
-A terminal **Game Over** threshold at Anxiety 100: disables input, plays a stinger, reloads the level.
+Each reaction is self-contained on its own actor (`BP_BushSource`, `BP_DoorSource`, `BP_StreetLamp`) with its own AkComponent and a `PlaySFX`/`PlayFlicker`/`BreakLamp` custom event.
+
+## Flashlight flicker
+
+Three `BP_StreetLamp` actors (Point Light + Timeline-driven intensity flicker), found via `Get All Actors Of Class`. One instance is flagged breakable and permanently breaks at a separate Anxiety threshold — light off, break sound, one-shot Niagara spark burst.
 
 ## Footstep surfaces
 
 Footstep sound is selected via a **Wwise Switch Container**, set from the surface material Unreal detects under the player at footstep time (`Footstep_Surface-Asphalt` / `-Grass` / `-Wood`).
+
+## Ambience
+
+Light ambience track (wind) plus one-shot wildlife emitters (owls, cicadas, crows) via Wwise AkComponent Random Containers for non-repetitive variation.
 
 ## What's not included
 

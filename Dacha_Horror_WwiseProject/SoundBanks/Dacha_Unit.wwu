@@ -23,9 +23,20 @@
 				</SoundBank>
 				<SoundBank Name="SB_Events" ID="{FEFB5891-2F13-4BE6-8101-8A9405F014C8}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Door" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Light" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="BushRustle" ID="{402A53FD-9D49-4E31-89B6-E8DD8446D7AD}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Door_Creaks" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Light_Flicker" ID="{92E805DC-3255-487D-951A-F9D6E6EE92FB}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Light_Breaks" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Bush_Rustle" ID="{402A53FD-9D49-4E31-89B6-E8DD8446D7AD}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SB_Env_Ambience" ID="{2D7BD20D-1268-412F-A0B0-FD25BA3E6ED8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Amb_Crickets" ID="{DA3D7606-EE0D-43D3-84A5-F2412A381DD9}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Amb_Raven" ID="{A27EA262-9BDA-4825-BF6D-674B83AD00A5}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Amb_Owl" ID="{020C09CC-BEC5-4E5D-8D58-E4AD39BD73B3}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience_Air" ID="{D22B4F4B-62D2-4E6D-B3EE-0C54B9245F0C}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

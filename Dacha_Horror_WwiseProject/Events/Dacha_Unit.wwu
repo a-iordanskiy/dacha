@@ -23,40 +23,95 @@
 						<Action Name="" ID="{3A1FC1A4-F0EA-426C-9015-E6A61F469E22}" ShortID="225202075">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footstep_Switch" ID="{D8E0B750-6C0B-48EE-9A13-5E8FA24BEFA2}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+									<ObjectRef Name="SC_Footstep_Switch" ID="{D8E0B750-6C0B-48EE-9A13-5E8FA24BEFA2}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="BushRustle" ID="{402A53FD-9D49-4E31-89B6-E8DD8446D7AD}">
+				<Event Name="Bush_Rustle" ID="{402A53FD-9D49-4E31-89B6-E8DD8446D7AD}">
 					<ChildrenList>
 						<Action Name="" ID="{CDA5367D-5AFF-408A-AF32-A3B92A760EEE}" ShortID="5863110">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Bush" ID="{4C41C299-3930-457A-AF18-8414663391CC}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+									<ObjectRef Name="RC_Bush_Rustle" ID="{4C41C299-3930-457A-AF18-8414663391CC}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Door" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}">
+				<Event Name="Door_Creaks" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}">
 					<ChildrenList>
 						<Action Name="" ID="{448A9E0B-1221-419B-9904-4AC7640B1895}" ShortID="489452321">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Door" ID="{C57E2C96-FEAA-472B-9EEE-B47D2E5E658D}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+									<ObjectRef Name="RC_Door_Creaks" ID="{C57E2C96-FEAA-472B-9EEE-B47D2E5E658D}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Light" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}">
+				<Event Name="Light_Breaks" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}">
 					<ChildrenList>
 						<Action Name="" ID="{A8122DDC-DC1E-422A-9203-CD2591522875}" ShortID="883986678">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Light" ID="{C30F2834-5115-4F0F-BF7F-B898040BDA7E}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+									<ObjectRef Name="RC_Light_Breaks" ID="{C30F2834-5115-4F0F-BF7F-B898040BDA7E}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Light_Flicker" ID="{92E805DC-3255-487D-951A-F9D6E6EE92FB}">
+					<ChildrenList>
+						<Action Name="" ID="{B810C9BB-89C3-4871-8459-7F3257147F4C}" ShortID="978720551">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Light_Flicker" ID="{9AB935FF-E97E-45A4-959C-755C423F9F79}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_Air" ID="{D22B4F4B-62D2-4E6D-B3EE-0C54B9245F0C}">
+					<ChildrenList>
+						<Action Name="" ID="{202F7839-9616-4A3A-A19C-3B4EAB0A07BD}" ShortID="246735492">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Env Ambience Playlist Container" ID="{A921D0C8-50AF-449A-BC88-7379777097B5}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Owl" ID="{020C09CC-BEC5-4E5D-8D58-E4AD39BD73B3}">
+					<ChildrenList>
+						<Action Name="" ID="{83C67C2D-DCB0-41F1-83EC-21AE8684EBC2}" ShortID="45176848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Owl" ID="{AA365BEB-1DE5-42BD-9793-392254380EE5}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Raven" ID="{A27EA262-9BDA-4825-BF6D-674B83AD00A5}">
+					<ChildrenList>
+						<Action Name="" ID="{37977169-52DD-49F5-B388-379119F9FAC1}" ShortID="884902364">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Raven" ID="{EF55BCB3-BF9F-4091-A19A-CA5A4E6C42DA}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_Crickets" ID="{DA3D7606-EE0D-43D3-84A5-F2412A381DD9}">
+					<ChildrenList>
+						<Action Name="" ID="{73DF917A-B411-4CCB-ABDA-C656CECF8C0E}" ShortID="687364231">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Cicada" ID="{8AFDED02-331B-43EB-B24D-C4C85DE66646}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
