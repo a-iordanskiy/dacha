@@ -14,9 +14,15 @@ Presence beats fire on **threshold-crossing** of Anxiety via a reusable `CheckTh
 
 Each reaction is self-contained on its own actor (`BP_BushSource`, `BP_DoorSource`, `BP_StreetLamp`) with its own AkComponent and a `PlaySFX`/`PlayFlicker`/`BreakLamp` custom event.
 
+A terminal **Game Over** at Anxiety 100: disables input, plays a stinger, reloads the level.
+
 ## Flashlight flicker
 
 Three `BP_StreetLamp` actors (Point Light + Timeline-driven intensity flicker), found via `Get All Actors Of Class`. One instance is flagged breakable and permanently breaks at a separate Anxiety threshold — light off, break sound, one-shot Niagara spark burst.
+
+## Interactable safe light — bicycle
+
+A bicycle prop on the level the player can interact with to turn on its headlight. Turning it on activates a light zone (analogue to a negative-rate `BP_AnxietyZone`) that lowers Anxiety while the player stays in range — a player-triggered safe spot, as opposed to the ambient light/dark zones.
 
 ## Footstep surfaces
 

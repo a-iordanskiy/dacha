@@ -117,6 +117,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Game_Over" ID="{8EF4F3B7-7862-46CC-8768-3EB9F069515B}">
+					<ChildrenList>
+						<Action Name="" ID="{0606DA61-5439-4F22-A24F-0AE0085C64E9}" ShortID="796453940">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Game_Over" ID="{A30C43C0-10D9-4846-B97D-814BDCD679FD}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Bicycle_Light" ID="{1302DD7C-090F-42D1-951A-E8440472EB6E}">
+					<ChildrenList>
+						<Action Name="" ID="{3AB78CFF-0A3E-4291-8D73-4BEF9B37FACC}" ShortID="597358338">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Bicycle_Light" ID="{2EA97300-DE93-42EB-92DC-96B572965DD4}" WorkUnitID="{7938D5A3-3070-4431-86D6-44F8C724F546}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

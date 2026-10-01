@@ -21,7 +21,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+							<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 						</Reference>
 						<Reference Name="PlaylistRoot">
 							<Custom>
@@ -518,14 +518,14 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+							<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Footstep_Surface" ID="{DBE0A24A-DEC0-4D07-A0EE-385EECB495D5}" WorkUnitID="{D9B72DAC-A179-4BFA-A304-8D3348845158}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Footstep_Asphalt" ID="{F94DD890-3D23-48F2-BFAD-C9A8F4A1DF92}" ShortID="562911911">
+						<RandomSequenceContainer Name="RC_Footstep_Asphalt" ID="{F94DD890-3D23-48F2-BFAD-C9A8F4A1DF92}" ShortID="562911911">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -785,7 +785,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Footstep_Grass" ID="{F68C0FFC-3B85-4E95-8E1F-21CF8176AE1F}" ShortID="92659986">
+						<RandomSequenceContainer Name="RC_Footstep_Grass" ID="{F68C0FFC-3B85-4E95-8E1F-21CF8176AE1F}" ShortID="92659986">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1045,7 +1045,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Footstep_Wood" ID="{E78874C1-35EB-46D5-AFBB-3B46D3386F07}" ShortID="337895167">
+						<RandomSequenceContainer Name="RC_Footstep_Wood" ID="{E78874C1-35EB-46D5-AFBB-3B46D3386F07}" ShortID="337895167">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -1309,32 +1309,32 @@
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="Footstep_Asphalt" ID="{F94DD890-3D23-48F2-BFAD-C9A8F4A1DF92}"/>
+								<ItemRef Name="RC_Footstep_Asphalt" ID="{F94DD890-3D23-48F2-BFAD-C9A8F4A1DF92}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="Footstep_Wood" ID="{E78874C1-35EB-46D5-AFBB-3B46D3386F07}"/>
+								<ItemRef Name="RC_Footstep_Wood" ID="{E78874C1-35EB-46D5-AFBB-3B46D3386F07}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
-								<ItemRef Name="Footstep_Grass" ID="{F68C0FFC-3B85-4E95-8E1F-21CF8176AE1F}"/>
+								<ItemRef Name="RC_Footstep_Grass" ID="{F68C0FFC-3B85-4E95-8E1F-21CF8176AE1F}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
 								<SwitchRef Name="Wood" ID="{304BC808-40B6-4AFB-B469-226B68B7791D}"/>
 								<ItemList>
-									<ItemRef Name="Footstep_Wood" ID="{E78874C1-35EB-46D5-AFBB-3B46D3386F07}"/>
+									<ItemRef Name="RC_Footstep_Wood" ID="{E78874C1-35EB-46D5-AFBB-3B46D3386F07}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Asphalt" ID="{B60AFF87-8FE2-45E5-84AC-1605B7A0DC3C}"/>
 								<ItemList>
-									<ItemRef Name="Footstep_Asphalt" ID="{F94DD890-3D23-48F2-BFAD-C9A8F4A1DF92}"/>
+									<ItemRef Name="RC_Footstep_Asphalt" ID="{F94DD890-3D23-48F2-BFAD-C9A8F4A1DF92}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Grass" ID="{5A1BB4CD-DCE3-4037-9892-8ECBC30F837C}"/>
 								<ItemList>
-									<ItemRef Name="Footstep_Grass" ID="{F68C0FFC-3B85-4E95-8E1F-21CF8176AE1F}"/>
+									<ItemRef Name="RC_Footstep_Grass" ID="{F68C0FFC-3B85-4E95-8E1F-21CF8176AE1F}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
@@ -1380,7 +1380,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1490,7 +1490,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1622,7 +1622,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1688,7 +1688,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1770,7 +1770,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 								<Reference Name="PlaylistRoot">
 									<Custom>
@@ -1951,7 +1951,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2271,7 +2271,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2457,7 +2457,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+									<ObjectRef Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2588,6 +2588,178 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<RandomSequenceContainer Name="RC_Game_Over" ID="{A30C43C0-10D9-4846-B97D-814BDCD679FD}" ShortID="333102411">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{59AAE25F-C0F5-43F5-8D1C-99E7115EFE77}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1468EB76-190E-4994-857D-B82032F4C225}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Game_Over" ID="{EEB9C2CC-2108-4F72-8E32-5B2D82199606}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="gameover" ID="{FCA02902-5F9B-4DA2-8EC2-B8869B311167}" ShortID="1070579785">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gameover" ID="{668ADB79-B39D-4A5A-B724-40B1BCA4082D}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.36305"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.18852"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gameover.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="556608347"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="gameover" ID="{668ADB79-B39D-4A5A-B724-40B1BCA4082D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="RC_Bicycle_Light" ID="{2EA97300-DE93-42EB-92DC-96B572965DD4}" ShortID="251828196">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F19E6363-1AEF-4E5A-AE96-93FCE4831201}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{93AAD589-CAF0-435C-96B6-1FD1A3BE0D76}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="120"/>
+											<Property Name="Min" Type="Real64" Value="-120"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1932DAF4-FD85-47C3-9C9E-D514F679707F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Ambience_Attenuation" ID="{AA29D794-4B0D-4EA9-B839-2CF8BAC7ECA1}" WorkUnitID="{3823E3B3-3A6C-45DF-83AF-DCB31008CF28}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="bicycle-001" ID="{6A1A71CC-6B65-4205-8C0E-5E449DE33996}" ShortID="996444583">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bicycle-001" ID="{D260D2FD-5B84-423C-8CF6-373A44726F80}">
+									<Language>SFX</Language>
+									<AudioFile>bicycle-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="271516897"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="bicycle-001" ID="{D260D2FD-5B84-423C-8CF6-373A44726F80}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="bicycle-002" ID="{1FA11B13-5980-4C8E-95F5-D5B483258228}" ShortID="165520366">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{018F801C-3379-48F2-BFAC-9DA6B2E38AAF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="bicycle-002" ID="{0A11FCD2-41F6-4410-A1C9-B7BEB350638B}">
+									<Language>SFX</Language>
+									<AudioFile>bicycle-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="960429684"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="bicycle-002" ID="{0A11FCD2-41F6-4410-A1C9-B7BEB350638B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

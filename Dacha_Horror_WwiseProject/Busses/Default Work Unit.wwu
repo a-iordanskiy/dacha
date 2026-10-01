@@ -4,11 +4,55 @@
 		<WorkUnit Name="Default Work Unit" ID="{3DEF8FD8-DE62-47C7-921C-55E47E10DAAD}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{9700B342-D14B-4614-8017-1F24F7931FA2}" WorkUnitID="{66FF79CD-0EDC-4CE1-A3C5-426899EE8FA6}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Gameplay" ID="{5F4F646E-CD99-4E0A-95FA-DDBB7B660467}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{41D9200E-C47C-4667-A383-B9DCCE6A59A0}" ShortID="290731142">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MasterVolumeFade" ID="{FD9FF580-D5C1-45BE-BD7D-C581693A25C1}" WorkUnitID="{2B4D0068-BE60-42FF-865C-F689320E7C72}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{88433894-E28A-4F6D-94DB-B880008B7858}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="Game_Over" ID="{EEB9C2CC-2108-4F72-8E32-5B2D82199606}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

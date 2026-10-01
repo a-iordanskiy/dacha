@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Game_Over" ID="{8EF4F3B7-7862-46CC-8768-3EB9F069515B}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Door_Creaks" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}"/>
 							<Position X="1" Y="0"/>
 						</Module>

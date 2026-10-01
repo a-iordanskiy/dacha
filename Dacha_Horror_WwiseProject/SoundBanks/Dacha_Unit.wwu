@@ -23,7 +23,9 @@
 				</SoundBank>
 				<SoundBank Name="SB_Events" ID="{FEFB5891-2F13-4BE6-8101-8A9405F014C8}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Bicycle_Light" ID="{1302DD7C-090F-42D1-951A-E8440472EB6E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door_Creaks" ID="{A72783B9-936D-45D8-8F1B-55599B50AA4E}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Game_Over" ID="{8EF4F3B7-7862-46CC-8768-3EB9F069515B}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Light_Flicker" ID="{92E805DC-3255-487D-951A-F9D6E6EE92FB}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Light_Breaks" ID="{5018FC83-F738-4C93-9021-EEABB8F2C8E1}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bush_Rustle" ID="{402A53FD-9D49-4E31-89B6-E8DD8446D7AD}" WorkUnitID="{D3295BE3-00E6-47E3-B4AF-FFFB3A8D984C}" Origin="Manual" Filter="7"/>
